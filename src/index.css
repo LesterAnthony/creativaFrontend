@@ -1,0 +1,387 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #2EC4B6;
+  --secondary: #7684ff88;
+  --error: #e7195a;
+}
+body {
+  /* background: #f1f1f1; */
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+header a {
+  /* color: #333; */
+  color: var(--primary);
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
+.profile-page {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  width: 50em;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.post-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  width: 50em;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.post-details h4 {
+  margin: 0 0 20px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+.post-details img {
+  width: 50em;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.post-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.post-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new post form */
+.create {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div .tag {
+  display: flex;
+}
+
+.tag.active {
+  background-color: #3c3c3c; /* Green */
+  color: #fff;
+}
+
+.tag.active .material-symbols-rounded {
+  color: white;
+}
+
+div.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+
+.post-details .filters .tag {
+  /* background: var(--primary); */
+  color: #fff;
+  /* border: 2px solid var(--primary); */
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  font-size: 1em;
+  margin: 5px;
+  justify-content: center;
+}
+
+.create button.tag {
+  display: flex;
+  /* width: 300px; */
+  align-items: center;
+  margin: 2px;
+  flex-grow: 1; /* This will make the buttons fill up the most space */
+  justify-content: center;
+}
+.post-details .tags {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-details .tags .tag {
+  /* background: var(--primary); */
+  color: #fff;
+  /* border: 2px solid var(--primary); */
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  font-size: 1em;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.tag-Hand-drawn {
+  background: #fc6f6f;
+  border: 2px solid #fc6f6f;
+}
+.tag-Paint {
+  background: #9773ff;
+  border: 2px solid #9773ff;
+}
+.tag-Digital {
+  background: #8caad8;
+  border: 2px solid #8caad8;
+}
+.tag-Graphic {
+  background: #2ec4b6;
+  border: 2px solid #2ec4b6;
+}
+.tag-Photography {
+  background: #ea9e44;
+  border: 2px solid #ea9e44;
+}
+.tag-Discussion {
+  background: #9be08a;
+  border: 2px solid #9be08a;
+}
+.tag-Seeking {
+  background: #d786ec;
+  border: 2px solid #d786ec;
+}
+.tag-Showcase {
+  background: #7976ff;
+  border: 2px solid #7976ff;
+}
+
+button.submitButton {
+  margin-top: 20px;
+}
+
+span.tag-text {
+  margin-left: 5px;
+}
+div.tag-text {
+  margin-left: 5px;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+input.search-bar {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  width: 20em;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+ 
+.profile-details p {
+  margin-left: 20px;
+}
+
+.profile-top-row {
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end of the container */
+  align-items: center;
+}
+.profile-top-row h1 {
+  margin-right: auto; /* Push the symbol to the right */
+}
+.profile-top-row .material-symbols-rounded {
+  margin-left: auto; /* Push the symbol to the right */
+}
+
+.profile-page .profile-picture {
+  margin-top: -110px;
+  margin-left: 20px;
+  width: 200px;
+  height: 200px; /* Set height to auto */
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.profile-banner {
+  width: 100%; /* Set the width to 100% */
+  height: 200px; /* Set the desired height */
+  object-fit: cover; /* Crop the image to cover the entire container */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+textarea {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100px; /* Set the height as desired */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none; /* Disable resizing */
+}
+
+.fileInput {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.editButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.editButtons button {
+  padding: 10px 20px; /* Add padding to the buttons */
+  border: none;
+  color: white; /* White text */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.post-details .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.post-details .user-info img{
+  width: 50px;
+  height: 50px; /* Set height to auto */
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.vote-menu {
+  display: flex;
+}
+
+.vote {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 75px;
+}
+.vote p {
+  margin-left: 5px;
+  color: #fff;
+}
+
+.vote-menu .vote {
+  background: #3c3c3c;
+}
+
+.vote-menu .vote.active {
+  background: var(--primary);
+}
